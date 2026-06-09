@@ -49,7 +49,7 @@ Your recorded data (routes, media) belongs to you. You grant us a limited licens
 To the maximum extent permitted by law, TrailCam's liability is limited to the amount you paid for the app in the 12 months preceding any claim.
 
 ## 10. Account Termination
-- You may delete your account at any time by emailing support@trailcam.app
+- You may delete your account at any time by emailing dcjwf@qq.com
 - We may suspend accounts that violate these Terms
 - Upon termination, your data will be deleted within 30 days
 
@@ -57,4 +57,4 @@ To the maximum extent permitted by law, TrailCam's liability is limited to the a
 These Terms are governed by the laws of the People's Republic of China.
 
 ## 12. Contact
-Email: support@trailcam.app
+Email: dcjwf@qq.com

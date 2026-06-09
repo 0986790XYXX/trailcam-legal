@@ -7,7 +7,7 @@ title: Privacy Policy - TrailCam
 
 **App Name**: TrailCam  
 **Developer**: Bingyan Dou  
-**Contact**: support@trailcam.app  
+**Contact**: dcjwf@qq.com  
 **Effective Date**: 2026-06-09
 
 ## 1. Information We Collect
@@ -47,7 +47,7 @@ title: Privacy Policy - TrailCam
 
 ## 5. Your Rights
 - **Export**: Download all your data anytime (Settings → Export Data)
-- **Delete**: Request account deletion by emailing support@trailcam.app
+- **Delete**: Request account deletion by emailing dcjwf@qq.com
 - We will process deletion requests within 30 business days
 
 ## 6. Data Retention
@@ -60,4 +60,4 @@ TrailCam is not directed at children under 13. We do not knowingly collect data 
 We will notify you of material changes through the app. Continued use after changes constitutes acceptance.
 
 ## 9. Contact Us
-Email: support@trailcam.app
+Email: dcjwf@qq.com
