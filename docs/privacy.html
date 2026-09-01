@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roam — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<h1>Roam Privacy Policy</h1>
+<p class="lede">
+  Applies to Roam for iPhone, version 1.0.<br>
+  Last updated: 30 July 2026 · Effective from the public release of version 1.0.<br>
+  <a href="privacy-zh.html">简体中文</a> · <a href="terms.html">Terms of Use</a>
+</p>
+
+<h2>1. The short version</h2>
+
+<div class="plain">
+  <p>Roam 1.0 has no account, no sign-up, no analytics, no advertising and no third-party
+  tracking code of any kind. Your recorded tracks, your photos, your videos and your voice notes
+  are written to storage on your own iPhone and are never uploaded to us. We operate no server
+  that receives your rides, because there is nothing for you to sign in to.</p>
+  <p>The app reaches the network for one thing, and only one: map imagery to draw underneath
+  your route. A tile request says which square of the world is on screen and carries no identity,
+  no track and no media. Section 4 describes it in full, because it is the only thing about you
+  that ever reaches an outside company.</p>
+  <p>The app also talks to Apple's App Store when you buy or restore Roam Pro. That exchange is
+  handled by iOS, not by us: we never see your payment details, and we receive no identifier for
+  you from it.</p>
+</div>
+
+<h2>2. What Roam records, and where it stays</h2>
+
+<div class="table-wrap">
+<table>
+  <tr>
+    <th>Data</th><th>Why</th><th>Where it goes</th>
+  </tr>
+  <tr>
+    <td>Precise location while you record — latitude, longitude, altitude, speed, course, accuracy and a timestamp per fix</td>
+    <td>To draw and measure the track you are recording: distance, duration, speed, climb, the shape of the line</td>
+    <td>A database file inside the app's own private storage on your iPhone. It is not transmitted.</td>
+  </tr>
+  <tr>
+    <td>Photos, videos and voice notes you capture inside the app during a ride</td>
+    <td>They are pinned to the moment and the place on the track where you captured them, which is the whole point of the app</td>
+    <td>Files inside the app's own private storage. They are deleted when you delete the ride.</td>
+  </tr>
+  <tr>
+    <td>Motion &amp; Fitness activity and barometric pressure (optional)</td>
+    <td>To tell a real stop at a traffic light from a lost GPS signal, and to measure climb more accurately than GPS altitude allows</td>
+    <td>Read on the device and used immediately. The derived altitude is stored with the track; nothing is transmitted.</td>
+  </tr>
+  <tr>
+    <td>Compass heading</td>
+    <td>To point the on-screen compass while you ride</td>
+    <td>Used on screen only. Not stored, not transmitted.</td>
+  </tr>
+  <tr>
+    <td>A local diagnostic log of what the recorder did — timings, counts, error codes</td>
+    <td>So a recording problem can be understood after the fact instead of guessed at</td>
+    <td>A local file. It is never sent anywhere automatically. You can read and share it yourself from Settings if you choose to.</td>
+  </tr>
+  <tr>
+    <td>Your settings — units, map choice, auto-pause and so on</td>
+    <td>To remember how you like the app</td>
+    <td>On the device.</td>
+  </tr>
+</table>
+</div>
+
+<p>Roam's data directories are marked with iOS file protection, so their contents are encrypted
+at rest and are not readable before the first unlock after a restart. Downloaded map packs are
+deliberately excluded from your device backup, because they can be downloaded again and there is no
+reason to spend your iCloud storage on them. Your rides, your media and your thumbnails
+<em>are</em> included in your device backup, which is how a new iPhone gets your history — that
+backup is Apple's, governed by Apple's terms, and we cannot see inside it.</p>
+
+<h2>3. What Roam does not do</h2>
+
+<ul>
+  <li><strong>No account.</strong> There is nothing to register, nothing to log into, and no profile
+  of you anywhere. Settings contains a row that says so.</li>
+  <li><strong>No analytics or crash-reporting service.</strong> No Firebase, no Sentry, no
+  Amplitude, no equivalent. The app contains no analytics SDK.</li>
+  <li><strong>No advertising, and no tracking.</strong> The app does not read the advertising
+  identifier, does not present a tracking request, and shares nothing with any data broker, ad
+  network or measurement partner. Its App Store privacy manifest declares tracking as false, with
+  no tracking domains.</li>
+  <li><strong>No selling or renting of data.</strong> There is no data of yours in our hands to
+  sell.</li>
+  <li><strong>No social features, no leaderboard, no cloud sync.</strong> Nothing you record is
+  visible to anybody else unless you export a file and send it yourself.</li>
+</ul>
+
+<h2>4. Every network connection the app can make</h2>
+
+<p>This is the complete list. If you put the phone in Airplane Mode, recording still works —
+satellite positioning needs no network — and everything except the map imagery behaves normally.</p>
+
+<h3>4.1 Apple Maps</h3>
+<p>The default basemap under your route is drawn by Apple's own map component built into iOS.
+Displaying it sends map requests to Apple. Those requests are handled by Apple under
+<a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; Apple states that its
+Maps service is designed not to associate map requests with an Apple Account. Roam sends Apple
+no track of yours, no media and no identifier of ours.</p>
+
+<h3>4.2 Roam's own map tiles</h3>
+<p>The alternative basemap — the one drawn from our own tiles rather than Apple's — is served from storage
+we operate ourselves at Cloudflare R2, currently at
+<span class="mono">pub-b18ac9c55fb64ecb8c4d7ca3300f7cf3.r2.dev</span>. It contains an
+OpenStreetMap-derived vector basemap, its label fonts and its style file, and nothing else. A
+request identifies the map area being drawn. It carries no account, no device identifier and no
+part of your track — there is no login and no key. As with any web server, Cloudflare records
+ordinary request logs (IP address, time, the file asked for) for delivery and abuse protection. We
+do not join those logs to any person, we build no profiles from them, and we do not use them for
+advertising. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy
+Policy</a>.</p>
+
+<h2>5. Permissions, and what happens if you refuse</h2>
+
+<p>Every permission the app asks for is refusable, and the app is designed to keep working when you
+refuse.</p>
+
+<div class="table-wrap">
+<table>
+  <tr><th>Permission</th><th>If you say no</th></tr>
+  <tr>
+    <td>Location — While Using the App</td>
+    <td>Recording cannot draw a track. This is the one permission the app genuinely needs, and it is
+    asked for the first time you start recording, not at launch.</td>
+  </tr>
+  <tr>
+    <td>Location — Always</td>
+    <td>Nothing breaks. "Always" only lets iOS hand the recording back to the app if the system shuts
+    it down mid-ride. It is insurance, not a requirement, and the app only offers to ask for it after
+    you have completed a recording.</td>
+  </tr>
+  <tr>
+    <td>Precise Location</td>
+    <td>The app still records, and labels the track as approximate. It does not nag.</td>
+  </tr>
+  <tr>
+    <td>Motion &amp; Fitness</td>
+    <td>Barometric altitude is unavailable, so climb is computed from GPS altitude instead, and stop
+    detection takes slightly longer to be confident. Recording is unaffected.</td>
+  </tr>
+  <tr><td>Camera</td><td>You cannot take photos or video inside the app. Everything else works.</td></tr>
+  <tr><td>Microphone</td><td>You cannot record voice notes. Everything else works.</td></tr>
+  <tr><td>Photo Library</td><td>You cannot add library photos to a ride or save media out to the library.</td></tr>
+</table>
+</div>
+
+<p><strong>Background location.</strong> Roam declares the background location capability and
+uses it for one purpose: continuing to record the track you started while the screen is off, the app
+is in the background, or you are using another app. That is what a route recorder is. Recording only
+runs in the background while a recording is in progress; when you stop, it stops.</p>
+
+<h2>6. Children</h2>
+<p>Roam is not directed at children and collects nothing from anybody. It contains no
+advertising, no chat and no user-to-user content. Roam Pro is a single one-time purchase
+handled entirely by the App Store; buying it collects nothing about you that this policy does not
+already describe.</p>
+
+<h2>7. Your control over your data</h2>
+
+<p>Because everything is on your iPhone, you do not have to ask us for anything:</p>
+<ul>
+  <li><strong>Export</strong> — any ride, or your entire library, as GPX, KML or CSV, from the ride's
+  share panel or from Settings. The files are yours.</li>
+  <li><strong>Delete a ride</strong> — its media and points go with it.</li>
+  <li><strong>Erase everything</strong> — Settings has one action that removes every ride, point and
+  media file from the app.</li>
+  <li><strong>Delete the app</strong> — iOS removes the app's entire storage with it. Nothing of
+  yours survives anywhere else, because nothing of yours was anywhere else.</li>
+</ul>
+<p>There is no account to delete, no data-access request to file and no data-deletion request to
+send, because we hold nothing about you. If you would like this stated to you in writing anyway,
+write to the address in section 10 and we will confirm it.</p>
+
+<h2>8. Third-party software and map data in this app</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>Component</th><th>Used for</th><th>Licence / attribution</th></tr>
+  <tr>
+    <td><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></td>
+    <td>The map data behind Roam's own basemap</td>
+    <td>© OpenStreetMap contributors. Map data available under the
+    <a href="https://opendatacommons.org/licenses/odbl/">Open Database License (ODbL) 1.0</a>;
+    cartography under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="https://maplibre.org/">MapLibre GL Native</a></td>
+    <td>Rendering that basemap, and storing a ride's map for offline review</td>
+    <td>© MapLibre contributors, BSD 2-Clause License.</td>
+  </tr>
+  <tr>
+    <td><a href="https://protomaps.com/">Protomaps</a> / PMTiles</td>
+    <td>The single-file tile archive format the basemap is packaged as</td>
+    <td>© Protomaps LLC, BSD 3-Clause License.</td>
+  </tr>
+  <tr>
+    <td>Noto Sans</td>
+    <td>Map labels in the offline basemap</td>
+    <td>© The Noto Project Authors,
+    <a href="https://openfontlicense.org/">SIL Open Font License 1.1</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/groue/GRDB.swift">GRDB.swift</a></td>
+    <td>The on-device database that holds your rides</td>
+    <td>© Gwendal Roué, MIT License.</td>
+  </tr>
+  <tr>
+    <td>Apple Maps, MapKit, Core Location, Core Motion</td>
+    <td>Positioning, the default basemap, motion and pressure</td>
+    <td>Part of iOS. Map attribution is displayed by Apple's own map view.</td>
+  </tr>
+</table>
+</div>
+
+<p>None of the above is an analytics, advertising or tracking component. GRDB, MapLibre and the
+PMTiles reader run entirely on your device. OpenStreetMap, Protomaps and the Noto Project receive
+nothing from the app — their work is baked into files we host ourselves.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If a future version of Roam collects or transmits something this page does not describe, this
+page is updated before that version ships, and the date at the top changes. Material changes —
+introducing an account, sync, or any transmission of your tracks or media — will be described in the
+app itself, not only here.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy, or about anything the app does with data:</p>
+<div class="plain">
+  <p><strong>Email:</strong> <span class="placeholder">support@douhouse.com</span><br>
+  <strong>Published by:</strong> <span class="placeholder">Chaojun Dou</span></p>
+  <p>We answer in English and Simplified Chinese.</p>
+</div>
+
+<footer>
+  Roam · Privacy Policy · <a href="terms.html">Terms of Use</a> ·
+  <a href="privacy-zh.html">简体中文</a> · <a href="index.html">Index</a>
+</footer>
+
+</main>
+</body>
+</html>

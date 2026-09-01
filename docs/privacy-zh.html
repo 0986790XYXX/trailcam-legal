@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roam — 隐私政策</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<h1>Roam 隐私政策</h1>
+<p class="lede">
+  适用于 iPhone 版 Roam 1.0。<br>
+  最后更新：2026 年 7 月 30 日 · 自 1.0 正式发布起生效。<br>
+  <a href="privacy.html">English</a> · <a href="terms-zh.html">用户协议</a>
+</p>
+
+<h2>1. 一句话说清</h2>
+
+<div class="plain">
+  <p>Roam 1.0 没有账号、不需要注册，没有任何数据分析、广告或第三方追踪代码。你记录的轨迹、拍下的照片和视频、说过的语音备注，都写在你自己这台 iPhone 的存储里，不会上传给我们。我们没有任何一台服务器会收到你的行程 —— 因为这个版本根本没有可登录的东西。</p>
+  <p>App 只为一件事联网：绘制轨迹底下的地图图像。一次瓦片请求说明的只是「屏幕上是世界的哪一格」，不携带你的身份、你的轨迹或你的媒体文件。这是整个 App 里唯一一处会有关于你的信息离开设备、到达外部公司的地方。第 4 节列出 App 可能发起的<strong>全部</strong>网络连接。</p>
+  <p>此外，当你购买或恢复 Roam Pro 时，App 会与 Apple 的 App Store 交互。这一步由 iOS 处理，不经过我们：我们看不到你的支付信息，也不会从中获得任何关于你的标识。</p>
+</div>
+
+<h2>2. Roam 记录什么，存在哪里</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>数据</th><th>为什么需要</th><th>去了哪里</th></tr>
+  <tr>
+    <td>记录过程中的精确位置 —— 每个定位点的经度、纬度、海拔、速度、方向、精度和时间戳</td>
+    <td>用来绘制和计算你正在记录的这条轨迹：距离、时长、速度、爬升、路线形状</td>
+    <td>你 iPhone 上 App 专属私有存储里的一个数据库文件。不会被发送出去。</td>
+  </tr>
+  <tr>
+    <td>你在骑行途中用 App 拍下的照片、视频和录下的语音</td>
+    <td>它们会被钉在你按下快门的那个时刻和轨迹上的那个位置 —— 这就是这个 App 存在的意义</td>
+    <td>App 专属私有存储里的文件。你删除这次行程时它们一同被删除。</td>
+  </tr>
+  <tr>
+    <td>运动与健身活动数据、气压（可选）</td>
+    <td>用来区分「真的停在红灯前」和「只是 GPS 信号丢了」，并比 GPS 海拔更准确地计算爬升</td>
+    <td>在设备上读取并立即使用。推算出的海拔随轨迹保存；不会被发送出去。</td>
+  </tr>
+  <tr>
+    <td>指南针朝向</td>
+    <td>驱动屏幕上的指南针</td>
+    <td>只用于当前显示。不保存，不发送。</td>
+  </tr>
+  <tr>
+    <td>本地诊断日志 —— 记录器的时序、计数、错误码</td>
+    <td>记录出问题时能查清原因，而不是靠猜</td>
+    <td>一个本地文件。绝不会自动发送到任何地方。你可以自己在设置里查看并选择分享。</td>
+  </tr>
+  <tr>
+    <td>你的偏好设置 —— 单位、地图、自动暂停等</td>
+    <td>记住你的使用习惯</td>
+    <td>在设备上。</td>
+  </tr>
+</table>
+</div>
+
+<p>Roam 的数据目录设置了 iOS 文件保护，内容在静态存储时是加密的，且在设备重启后首次解锁之前不可读取。已下载的地图包被<strong>刻意</strong>排除在设备备份之外 —— 它们随时可以重新下载，没有理由占用你的 iCloud 空间。你的行程、媒体文件和缩略图<strong>包含</strong>在设备备份里，这也是你换新 iPhone 时历史记录能跟过去的原因。那份备份属于 Apple、受 Apple 条款约束，我们看不到里面的内容。</p>
+
+<h2>3. Roam 不做什么</h2>
+
+<ul>
+  <li><strong>没有账号。</strong>没有任何东西要注册、要登录，任何地方都没有关于你的档案。设置页里有一行明确写着这一点。</li>
+  <li><strong>没有数据分析和崩溃上报服务。</strong>没有 Firebase、Sentry、Amplitude 或任何同类产品。App 里不含任何分析 SDK。</li>
+  <li><strong>没有广告，没有追踪。</strong>App 不读取广告标识符、不弹出追踪授权请求，也不向任何数据经纪商、广告网络或效果监测方分享任何内容。它在 App Store 隐私清单中声明「不追踪」，且追踪域名列表为空。</li>
+  <li><strong>不出售、不出租数据。</strong>我们手里没有你的数据可卖。</li>
+  <li><strong>没有社交功能、没有排行榜、没有云同步。</strong>除非你自己导出文件发给别人，否则你记录的任何内容对其他人都是不可见的。</li>
+</ul>
+
+<h2>4. App 可能发起的全部网络连接</h2>
+
+<p>以下是完整清单。开启飞行模式后记录依然可用 —— 卫星定位本身不需要网络 —— 除地图图像外一切正常。</p>
+
+<h3>4.1 Apple 地图</h3>
+<p>轨迹下方的默认底图由 iOS 内置的 Apple 地图组件绘制，显示它会向 Apple 发起地图请求。这些请求由 Apple 依据
+<a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 处理；Apple 声明其地图服务的设计不会把地图请求与 Apple 账户关联。Roam 不会向 Apple 发送你的任何轨迹、媒体文件或我们的任何标识符。</p>
+
+<h3>4.2 Roam 自己的地图瓦片</h3>
+<p>另一套底图 —— 也就是用我们自己的瓦片、而不是 Apple 瓦片绘制的那套 —— 由我们自己运营的 Cloudflare R2 存储提供，当前地址为
+<span class="mono">pub-b18ac9c55fb64ecb8c4d7ca3300f7cf3.r2.dev</span>。它里面只有一份基于 OpenStreetMap 的矢量底图、标注字体和样式文件，别无其他。一次请求只表明「正在绘制哪一片区域」，不携带账号、设备标识符或你轨迹的任何部分 —— 这里既没有登录也没有密钥。和任何 Web 服务器一样，Cloudflare 会为了内容分发与防滥用保留常规访问日志（IP 地址、时间、请求的文件）。我们不会把这些日志与任何个人关联、不会据此建立画像、也不会用于广告。参见
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 隐私政策</a>。</p>
+
+<h2>5. 权限，以及你拒绝之后会怎样</h2>
+
+<p>App 请求的每一项权限都可以拒绝，而 App 的设计就是在你拒绝之后依然可用。</p>
+
+<div class="table-wrap">
+<table>
+  <tr><th>权限</th><th>拒绝之后</th></tr>
+  <tr>
+    <td>位置 —— 使用 App 期间</td>
+    <td>无法绘制轨迹。这是 App 真正必需的唯一权限，而且是在你第一次开始记录时才申请，不是在启动时。</td>
+  </tr>
+  <tr>
+    <td>位置 —— 始终</td>
+    <td>什么都不会坏。「始终」的作用只是：万一 iOS 在骑行途中终止了 App，系统能把记录交还给它。这是保险，不是必需项，而且 App 只会在你完成一次记录之后才提出申请。</td>
+  </tr>
+  <tr>
+    <td>精确位置</td>
+    <td>App 照样记录，并把这条轨迹标注为近似轨迹。不会反复提醒你。</td>
+  </tr>
+  <tr>
+    <td>运动与健身</td>
+    <td>无法使用气压海拔，爬升改用 GPS 海拔计算；判定「停下」所需的时间稍长。记录本身不受影响。</td>
+  </tr>
+  <tr><td>相机</td><td>无法在 App 内拍照或录像。其他一切正常。</td></tr>
+  <tr><td>麦克风</td><td>无法录制语音备注。其他一切正常。</td></tr>
+  <tr><td>照片</td><td>无法把相册照片加入行程，也无法把媒体保存回相册。</td></tr>
+</table>
+</div>
+
+<p><strong>后台定位。</strong>Roam 声明了后台定位能力，用途只有一个：在你已经开始记录之后，即使屏幕关闭、App 退到后台、或你在用别的 App，也继续记录这条轨迹。这就是一个轨迹记录器该做的事。后台运行只发生在记录进行中；你按下结束，它就结束。</p>
+
+<h2>6. 儿童</h2>
+<p>Roam 不面向儿童，也不从任何人身上收集数据。App 内没有广告、没有聊天、没有用户生成内容。Roam Pro 是一次性买断，全程由 App Store 处理，购买它不会收集本政策未描述的任何信息。</p>
+
+<h2>7. 你对自己数据的控制权</h2>
+
+<p>因为一切都在你的 iPhone 上，你不需要向我们申请任何事：</p>
+<ul>
+  <li><strong>导出</strong> —— 单次行程或整个库，导出为 GPX、KML 或 CSV，入口在行程分享面板和设置页。文件是你的。</li>
+  <li><strong>删除某次行程</strong> —— 它的媒体和轨迹点一并删除。</li>
+  <li><strong>清空全部数据</strong> —— 设置页里有一个动作，可移除 App 内的所有行程、轨迹点和媒体文件。</li>
+  <li><strong>删除 App</strong> —— iOS 会连同 App 的全部存储一起删除。你的数据不会在别处残留，因为它从来就没在别处。</li>
+</ul>
+<p>这里没有账号可注销、没有数据访问申请要提交、也没有数据删除请求要发送，因为我们没有持有你的任何数据。如果你仍然希望我们以书面形式确认这一点，请写信到第 10 节的邮箱，我们会给你确认。</p>
+
+<h2>8. App 中使用的第三方软件与地图数据</h2>
+
+<div class="table-wrap">
+<table>
+  <tr><th>组件</th><th>用途</th><th>许可 / 署名</th></tr>
+  <tr>
+    <td><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></td>
+    <td>Roam 自有底图背后的地图数据</td>
+    <td>© OpenStreetMap 贡献者。地图数据依
+    <a href="https://opendatacommons.org/licenses/odbl/">开放数据库许可协议（ODbL）1.0</a> 提供；
+    地图渲染成果依 <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>。</td>
+  </tr>
+  <tr>
+    <td><a href="https://maplibre.org/">MapLibre GL Native</a></td>
+    <td>渲染该底图，以及保存一次行程的地图供离线回顾</td>
+    <td>© MapLibre 贡献者，BSD 2-Clause 许可证。</td>
+  </tr>
+  <tr>
+    <td><a href="https://protomaps.com/">Protomaps</a> / PMTiles</td>
+    <td>底图打包所用的单文件瓦片归档格式</td>
+    <td>© Protomaps LLC，BSD 3-Clause 许可证。</td>
+  </tr>
+  <tr>
+    <td>Noto Sans</td>
+    <td>离线底图上的地图标注</td>
+    <td>© Noto 项目作者，
+    <a href="https://openfontlicense.org/">SIL 开放字体许可协议 1.1</a>。</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/groue/GRDB.swift">GRDB.swift</a></td>
+    <td>保存你行程数据的设备端数据库</td>
+    <td>© Gwendal Roué，MIT 许可证。</td>
+  </tr>
+  <tr>
+    <td>Apple 地图、MapKit、Core Location、Core Motion</td>
+    <td>定位、默认底图、运动与气压</td>
+    <td>iOS 系统组件。地图署名由 Apple 自己的地图视图显示。</td>
+  </tr>
+</table>
+</div>
+
+<p>以上没有任何一项是分析、广告或追踪组件。GRDB、MapLibre 和 PMTiles 读取器完全运行在你的设备上。OpenStreetMap、Protomaps 和 Noto 项目不会从 App 收到任何东西 —— 他们的成果被打包进了我们自己托管的文件里。</p>
+
+<h2>9. 本政策的变更</h2>
+<p>如果 Roam 的某个未来版本会收集或传输本页面没有描述的内容，本页面会在该版本发布之前先更新，页首日期随之变化。重大变更 —— 例如引入账号、云同步，或任何形式的轨迹与媒体上传 —— 会在 App 内明确说明，而不只是写在这里。</p>
+
+<h2>10. 联系我们</h2>
+<p>关于本政策，或关于 App 对数据所做的任何事：</p>
+<div class="plain">
+  <p><strong>邮箱：</strong><span class="placeholder">support@douhouse.com</span><br>
+  <strong>发布者：</strong><span class="placeholder">Chaojun Dou</span></p>
+  <p>我们用中文和英文回复。</p>
+</div>
+
+<footer>
+  Roam · 隐私政策 · <a href="terms-zh.html">用户协议</a> ·
+  <a href="privacy.html">English</a> · <a href="index.html">目录</a>
+</footer>
+
+</main>
+</body>
+</html>
